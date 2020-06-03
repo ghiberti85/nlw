@@ -19,10 +19,10 @@
 
 <div id="banner">
     <div align="center" class="inline-block">
-        <img alt="Ecoleta" src="assets/Home.svg" width="48%">
+        <img alt="Ecoleta" src="assets/Home.svg" width="45%">
     </div>
     <div align="center" class="inline-block">
-       <img alt="Ecoleta" src="assets/Lista.svg" width="48%">
+       <img alt="Ecoleta" src="assets/Lista.svg" width="45%">
     </div>
 </div>
 <p align="center">
