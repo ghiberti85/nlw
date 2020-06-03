@@ -37,7 +37,7 @@ O Ecoleta é um projeto que visa conectar pessoas a pontos de coleta de lixo de 
 
 ## 🔖 Layout
 
-Você poderá visualizar o layout do projeto em breve através do [Figma](https://www.figma.com). Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
+Você poderá visualizar o layout do projeto através desse [link](https://www.figma.com/file/Byw4X5etg8VCmezueyhzkC/Ecoleta-(Starter)). Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
 
 ## 🤔 Como contribuir
 
