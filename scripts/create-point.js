@@ -1,69 +1,50 @@
-// comments
-// document.write("Hello")
+function populateUFs() {
+  const ufSelect = document.querySelector("select[name=uf]")
 
-// variaveis, tipos de dados
-// let myvar = "He"
-// const myconst = "He"
+  fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+  .then( res => res.json() )
+  .then( states => {
 
-// document.write(myconst + myvar)
+      for( const state of states ) {
+          ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+      }
 
-// string
-// "Isso é uma string"
-// 'Isso também é um string'
-// `Isso é uma string também`
+  })
+}
 
-// number
-// const n1 = 1
-// const n2 = 12
-// document.write(n1 + n2)
-
-// boolean - true ou false
-// const bTrue = true
-// const bFalse = false
-// document.write(bFalse)
-
-// objeto possuem propriedades e funcionalidade
-// const pessoa = {
-//   altura: "1,80m",
-//   idade: 24,
-//   solteiro: true,
-//   correr(){
-//     document.write("executar uma grande logica de correr")
-//   }
-// }
-
-// pessoa.correr()
-
-// Array - Vetores
-// const colecaoDeBolinhas = ["blue", "green", 1, {name: "My Name"}]
-
-// document.write(colecaoDeBolinhas[3].name)
+populateUFs()
 
 
-// Funções - Funcionalides - Atalhos - Reuso de código
+function getCities(event) {
+  const citySelect = document.querySelector("[name=city]")
+  const stateInput = document.querySelector("[name=state]")
 
-// // registrar função
-// function sayMyName(name) {
-  
-//   document.write(name)
-// }
+  const ufValue = event.target.value
 
-// // executar
-// sayMyName("Douglas")
-// sayMyName("Valeska")
-// sayMyName("Kyam")
+  const indexOfSelectedState = event.target.selectedIndex
+  stateInput.value = event.target.options[indexOfSelectedState].text
 
-// condicionais
 
-// const notaFinal = 7
+  const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
 
-// if( notaFinal < 5 ) {
-//   document.write("Reprovado")
-// } else {
-//   document.write("Aprovado")
-// }
 
-// loop repetições
-// for (i = 0; i < 10; i++) {
-//   document.write(`<p>${i}</p>`)
-// }
+  citySelect.innerHTML = "<option value>Selecione a Cidade</option>"
+  citySelect.disabled = true
+
+  fetch(url)
+  .then( res => res.json() )
+  .then( cities => {
+      
+
+      for( const city of cities ) {
+          citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+      }
+
+      citySelect.disabled = false
+  } )
+}
+
+
+document
+  .querySelector("select[name=uf]")
+  .addEventListener("change", getCities)

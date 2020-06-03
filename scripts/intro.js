@@ -1,50 +1,69 @@
-function populateUFs() {
-  const ufSelect = document.querySelector("select[name=uf]")
+// comments
+// document.write("Hello")
 
-  fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
-  .then( res => res.json() )
-  .then( states => {
+// variaveis, tipos de dados
+// let myvar = "He"
+// const myconst = "He"
 
-      for( const state of states ) {
-          ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
-      }
+// document.write(myconst + myvar)
 
-  })
-}
+// string
+// "Isso é uma string"
+// 'Isso também é um string'
+// `Isso é uma string também`
 
-populateUFs()
+// number
+// const n1 = 1
+// const n2 = 12
+// document.write(n1 + n2)
 
+// boolean - true ou false
+// const bTrue = true
+// const bFalse = false
+// document.write(bFalse)
 
-function getCities(event) {
-  const citySelect = document.querySelector("[name=city]")
-  const stateInput = document.querySelector("[name=state]")
+// objeto possuem propriedades e funcionalidade
+// const pessoa = {
+//   altura: "1,80m",
+//   idade: 24,
+//   solteiro: true,
+//   correr(){
+//     document.write("executar uma grande logica de correr")
+//   }
+// }
 
-  const ufValue = event.target.value
+// pessoa.correr()
 
-  const indexOfSelectedState = event.target.selectedIndex
-  stateInput.value = event.target.options[indexOfSelectedState].text
+// Array - Vetores
+// const colecaoDeBolinhas = ["blue", "green", 1, {name: "My Name"}]
 
-
-  const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
-
-
-  citySelect.innerHTML = "<option value>Selecione a Cidade</option>"
-  citySelect.disabled = true
-
-  fetch(url)
-  .then( res => res.json() )
-  .then( cities => {
-      
-
-      for( const city of cities ) {
-          citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
-      }
-
-      citySelect.disabled = false
-  } )
-}
+// document.write(colecaoDeBolinhas[3].name)
 
 
-document
-  .querySelector("select[name=uf]")
-  .addEventListener("change", getCities)
+// Funções - Funcionalides - Atalhos - Reuso de código
+
+// // registrar função
+// function sayMyName(name) {
+  
+//   document.write(name)
+// }
+
+// // executar
+// sayMyName("Douglas")
+// sayMyName("Valeska")
+// sayMyName("Kyam")
+
+// condicionais
+
+// const notaFinal = 7
+
+// if( notaFinal < 5 ) {
+//   document.write("Reprovado")
+// } else {
+//   document.write("Aprovado")
+// }
+
+// loop repetições
+// for (i = 0; i < 10; i++) {
+//   document.write(`<p>${i}</p>`)
+// }
