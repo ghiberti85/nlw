@@ -16,16 +16,9 @@
 </p>
 
 <br>
-
-<div id="banner">
-    <div align="center" class="inline-block">
-        <img alt="Ecoleta" src="assets/Home.svg" width="40%">
-    </div>
-    <div align="center" class="inline-block">
-       <img alt="Ecoleta" src="assets/Lista.svg" width="40%">
-    </div>
-</div>
-<p align="center">
+<p align="center" class="inline-block">
+  <img alt="Ecoleta" src="assets/Home.svg" width="50%">
+  <img alt="Ecoleta" src="assets/Lista.svg" width="50%">
   <img alt="Ecoleta" src="assets/Cadastro.svg" width="50%">
 </p>
 
