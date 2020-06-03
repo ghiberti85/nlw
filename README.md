@@ -27,9 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [HTML5](https://devdocs.io/html/)
 - [CSS3](https://devdocs.io/css/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
+- [JAVASCRIPT](https://devdocs.io/javascript/)
 
 ## 💻 Projeto
 
