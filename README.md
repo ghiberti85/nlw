@@ -17,9 +17,9 @@
 
 <br>
 <p align="center" class="inline-block">
-  <img alt="Ecoleta" src="assets/Home.svg" width="50%">
-  <img alt="Ecoleta" src="assets/Lista.svg" width="50%">
-  <img alt="Ecoleta" src="assets/Cadastro.svg" width="50%">
+  <img alt="Ecoleta" src="public/assets/Home.svg" width="50%">
+  <img alt="Ecoleta" src="public/assets/Lista.svg" width="50%">
+  <img alt="Ecoleta" src="public/assets/Cadastro.svg" width="50%">
 </p>
 
 ## :rocket: Tecnologias
