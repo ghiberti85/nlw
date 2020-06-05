@@ -29,6 +29,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [HTML5](https://devdocs.io/html/)
 - [CSS3](https://devdocs.io/css/)
 - [JAVASCRIPT](https://devdocs.io/javascript/)
+- [NODE.JS](https://devdocs.io/node/)
+- [SQLite](https://devdocs.io/sqlite/)
 
 ## 💻 Projeto
 
