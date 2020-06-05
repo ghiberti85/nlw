@@ -1,6 +1,8 @@
 
 #page-home {
-    height: 100vh;
+    height: 105vh;
+    margin-top: -50px;
+    padding:25px;
 
     background: url('../assets/home-background.svg') no-repeat;
     background-position: 35vw bottom;

@@ -26,10 +26,11 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [HTML5](https://devdocs.io/html/)
-- [CSS3](https://devdocs.io/css/)
-- [JAVASCRIPT](https://devdocs.io/javascript/)
-- [NODE.JS](https://devdocs.io/node/)
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/)
+- [JavaScript](https://devdocs.io/javascript/)
+- [Node.js](https://devdocs.io/node/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [SQLite](https://devdocs.io/sqlite/)
 
 ## 💻 Projeto
