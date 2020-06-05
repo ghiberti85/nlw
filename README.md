@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="DevRadar" title="#delicinha" src="assets/logo.svg" width="200px" />
+    <img alt="Logo" title="#delicinha" src="public/assets/logo.svg" width="200px" />
 </h1>
 
 <h4 align="center">
